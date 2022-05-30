@@ -56,9 +56,9 @@ while cap.isOpened():
                 image, hand_landmarks, mp_hands.HAND_CONNECTIONS)
     resized_img = cv2.resize(image, (400, 200))
 
-    cv2.imshow('MediaPipe Hands (ESC or q to quit)', resized_img)
-    cv2.moveWindow('image', 400, 200)
-    if cv2.waitKey(5) & 0xFF == 27:
-        break
+    #cv2.imshow('MediaPipe Hands (ESC or q to quit)', resized_img)
+    #cv2.moveWindow('image', 400, 200)
+    #if cv2.waitKey(5) & 0xFF == 27:
+    #    break
 hands.close()
 cap.release()
